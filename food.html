@@ -9,18 +9,28 @@
             text-align: center;
             margin-top: 30px;
             font-family: 'Courier';
-            background-color:#FFF5E4;
-            color: #FF9494;
+            background-color: #AEC6CF;
+            color: #333333;
+            position: relative; /* Required for absolute positioning of confetti and balloons */
         }
-        #foodquestion {
+        #Intro {
             font-size: 50px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+        .Message {
+            margin: 20px auto; 
+            max-width: 600px; 
+            text-align: left; 
+            padding: 20px; 
+            background-color: #FFFFFF; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
         .food-item {
             display: inline-block;
             margin: 10px;
             vertical-align: top;
-			color: #FF9494;
+            color: #333333;
         }
         .food-item img {
             width: 220px; 
@@ -37,51 +47,36 @@
             margin: 10px;
             font-family: 'courier';
             margin-bottom: 20px;
-            background-color:#FFE3E1;
-            color: #e67373;
+            background-color:#333333;
+            color: #AEC6CF;
             border-radius: 12px;
-            border: 2px solid #FFE3E1;
+            border: 2px solid #333333;
         }
     </style>
 </head>
 <body>
-    <div id="foodquestion"><b><u>What food would you like to eat?</u></b></div>
+    <div id="Intro"><b>Where would you like to eat?</b></div>
     
+    <div class = "Message">
+        <p>Select from the following options now please!!</p>
+        <p>I gave you a small list of options to keep it simple for U</p>
+        <p>I'll do you a solid. Pick cuisine then I choose one from my list okay!</p>
+    </div>
     <div class="food-selection">
         <div class="food-item">
-            <img src="food/burgers.jpeg" alt="Burgers, fries and fried chicken">
-            <label><input type="checkbox" name="food" value="Burgers, fries and fried chicken"> burgers and fried chicken</label>
+            <img src="foods/homecook.jpeg" alt="Cook our own yummy food!">
+            <label><input type="checkbox" name="food" value="Cook our own yummy food!"> Cook our own yummy food!</label>
         </div>
         <div class="food-item">
-            <img src="food/dog.jpeg" alt="dog">
-            <label><input type="checkbox" name="food" value="hotdog"> hotdog</label>
+            <img src="foods/lambragu.jpeg" alt="lamb Ragu">
+            <label><input type="checkbox" name="food" value="lamb Ragu"> Restaurant Pasta</label>
         </div>
         <div class="food-item">
-            <img src="food/koreanfood.jpeg" alt="koreanfood">
-            <label><input type="checkbox" name="food" value="Korean food"> korean food</label>
-        </div>
-        <div class="food-item">
-            <img src="food/pasta.jpeg" alt="pasta">
-            <label><input type="checkbox" name="food" value="pasta"> pasta</label>
-        </div>
-        <div class="food-item">
-            <img src="food/pizza.jpeg" alt="pizza">
-            <label><input type="checkbox" name="food" value="pizza"> pizza</label>
-        </div>
-        <div class="food-item">
-            <img src="food/salad.jpeg" alt="salad">
-            <label><input type="checkbox" name="food" value="salad"> salad</label>
-        </div>
-        <div class="food-item">
-            <img src="food/steak.jpeg" alt="steak">
-            <label><input type="checkbox" name="food" value="steak"> steak</label>
-        </div>
-        <div class="food-item">
-            <img src="food/sushi.jpeg" alt="sushi">
-            <label><input type="checkbox" name="food" value="sushi"> sushi</label>
+            <img src="foods/xlbs.jpeg" alt="Chinese food">
+            <label><input type="checkbox" name="food" value="Chinese food"> Chinese food</label>
         </div>
     </div>
-    <button class ="button"onclick="location.href='dessert.html'">Continue UWU</button>
+    <button class ="button"onclick="location.href='dessert.html'">Thank U</button>
     
 </body>
 </html>

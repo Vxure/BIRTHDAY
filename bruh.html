@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+        body {
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Courier';
+            background-color: #AEC6CF;
+            color: #333333;
+            position: relative; /* Required for absolute positioning of confetti and balloons */
+        }
+        #Intro {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .Message {
+            margin: 20px auto; 
+            max-width: 600px; 
+            text-align: left; 
+            padding: 20px; 
+            background-color: #FFFFFF; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        }
+        .answerButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            font-family: 'courier';
+            margin-bottom: 20px;
+            background-color:#333333;
+            color: #AEC6CF;
+            border-radius: 12px;
+            border: 2px solid #333333;
+        }
+	</style>
+</head>
+<body>
+	<div id="Intro"><b>Bruh</b></div>
+    <br>
+    <img src='PikachuUpset.gif'>
+
+    <div class="Message">
+        <p>It's your birthday lady please pick!</p>
+    </div>
+
+    <button class="answerButton" onclick="location.href='food.html'">はいはい！</button>
+    <button class="answerButton" id="noButton">No U</button>
+
+    <script>
+        document.getElementById('noButton').addEventListener('click', function() {
+            var yesButton = document.querySelector('button[onclick*="food.html"]');
+            var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentFontSize + 10) + 'px'; // Increase font size by 5px
+        });
+    </script>
+    
+</body>
+</html>
