@@ -57,24 +57,52 @@
 <body>
     <div id="Intro"><b>Where would you like to eat?</b></div>
     <div class = "Message">
-        <p>Select from the following options now please!!</p>
-        <p>I gave you a small list of options to keep it simple for U</p>
-        <p>I'll do you a solid. Pick cuisine then I choose one from my list okay!</p>
+        <p>U mentioned pasta, so select from the following options now please!!</p>
+        <p>I gave you a smallish list of options to keep it simple for U</p>
+        <p>Check box of restaurant chosen, then fill out details, click send.</p>
+        <p>Click image -> More info!</p>
     </div>
+    <form target="_blank" action="https://fabform.io/f/DKHRcxk" method="post" target="_blank">
+    <label for="selection">Select Option</label><br>
     <div class="food-selection">
         <div class="food-item">
-            <img src="foods/homecook.jpeg" alt="Cook our own yummy food!">
-            <label><input type="checkbox" name="food" value="Cook our own yummy food!"> Cook our own yummy food!</label>
+            <a href="Restaurant Pages/OSTE.html">
+                <img src="images/OSTE.MOV" alt="OSTE @ Grove">
+            </a>
+            <label><input type="checkbox" name="selection[]" value="OSTE @ Grove"> OSTE @ Grove</label>
         </div>
         <div class="food-item">
-            <img src="foods/lambragu.jpeg" alt="lamb Ragu">
-            <label><input type="checkbox" name="food" value="lamb Ragu"> Restaurant Pasta</label>
+            <a href="Restaurant Pages/C & O.html">
+                <img src="images/C & O.MOV" alt="C & O @ Venice">
+            </a>
+            <label><input type="checkbox" name="selection[]" value="C & O @ Venice"> C & O @ Venice</label>
         </div>
         <div class="food-item">
-            <img src="foods/xlbs.jpeg" alt="Chinese food">
-            <label><input type="checkbox" name="food" value="Chinese food"> Chinese food</label>
+            <a href="Restaurant Pages/UOVO.html">
+                <img src="images/UOVO.MOV" alt="UOVO @ Santa Monica">
+            </a>
+            <label><input type="checkbox" name="selection[]" value="UOVO @ Santa Monica"> UOVO @ Santa Monica</label>
         </div>
-    </div>
-    <button class ="button"onclick="location.href='ending.html'">Thank U</button>
+        <br>
+        <div class="food-item">
+            <a href="Restaurant Pages/CENTO.html">
+                <img src="images/CENTO.MOV" alt="Cento @ West Adams">
+            </a>
+            <label><input type="checkbox" name="selection[]" value="Cento @ West Adams"> Cento @ West Adams</label>
+        </div>
+        <div class="food-item">
+            <a href="Restaurant Pages/ANTICO NUOVO.html">
+                <img src="images/ANTICO NUOVO.MOV" alt="Antico Nuovo @ Koreatown">
+            </a>
+            <label><input type="checkbox" name="selection[]" value="Antico Nuovo @ Koreatown"> Antico Nuovo @ Koreatown<br></label>
+        </div>
+    </div><br>
+        <label for="fullName">Full Name</label>
+        <input name="fullName" type="text" required><br><br>
+        <label for="email">Email</label>
+        <input name="email" type="email" required><br><br>
+        <button class="button" type="submit">Send</button><br>
+        <button class="button" type="button" onclick = "location.href = 'ending.html'">Thank U</button>
+      </form>
 </body>
 </html>
